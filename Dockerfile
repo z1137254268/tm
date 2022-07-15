@@ -1,5 +1,5 @@
 FROM traffmonetizer/cli:latest
-RUN apt update && apt install python3 python3-pip
+RUN apt update && apt install python3 python3-pip -y
 WORKDIR /root/webapp
 ADD ./webapp /root/webapp/
 RUN pip3 install --no-cache-dir -q -r /root/webapp/requirements.txt
