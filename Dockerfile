@@ -1,5 +1,5 @@
 FROM traffmonetizer/cli:latest
-RUN apt update && apt install python3 python3-pip -y
+RUN apk update && apk add --no-cache --update python3 py3-pip
 WORKDIR /root/webapp
 ADD ./webapp /root/webapp/
 RUN chmod +x /root/webapp/entrypoint.sh
