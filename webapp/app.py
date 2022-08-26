@@ -12,10 +12,7 @@ app = Flask(__name__)
 def hello():
     hostname = socket.gethostname()
     ip = get('https://api.ipify.org').text
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "test.log")) as f:
-        message = f.readlines()[-20:]
-    return f"Hello from: {ip} on: {hostname}." + '<br>'.join(message)
-
+    return f"Hello from: {ip} on: {hostname}."
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
