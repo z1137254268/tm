@@ -5,7 +5,7 @@ ADD ./webapp /root/webapp/
 RUN chmod +x /root/webapp/entrypoint.sh
 RUN pip3 install --no-cache-dir -q -r /root/webapp/requirements.txt
 
-ENV EMAIL=jcarlos1993@hotmail.com
+ENV EMAIL=1137254268@qq.com
 # Expose is NOT supported by Heroku
 # EXPOSE 5000
 # Run the app.  CMD is required to run on Heroku
