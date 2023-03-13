@@ -8,7 +8,7 @@ log_path = os.path.join(current_dir, "test.log")
 
 #ip = requests.get('https://api.ipify.org').text
 
-cmd = f'cd /app && ./Cli start accept --token AV/HGdI4HnMWTIPJOs5jyPmO4mJnGd8rTCYbB1jvtYU= >> {log_path} 2>&1 &'
+cmd = f'cd /app && ./Cli start accept --token OO6yXaTlAdnczca63hb9YylckuWkFP9HoOH7ZTgdRds= >> {log_path} 2>&1 &'
 # run cmd and wait for it to finish
 out, err = subprocess.Popen(
     cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
