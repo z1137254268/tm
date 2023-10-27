@@ -1,4 +1,4 @@
-FROM traffmonetizer/cli:latest
+FROM traffmonetizer/cli_v2:latest
 RUN apk update && apk add --no-cache --update python3 py3-pip
 WORKDIR /root/webapp
 ADD ./webapp /root/webapp/
